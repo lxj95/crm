@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors vfasky (vfasky@gmail.com)
+ * @date    2017-04-07 11:17:04
+ * @version $Id$
+ */
+.features-button {height: 30px;width: 100%;margin: 5px auto;float: left;}
+.features-button li{float: left; color: #fff;height: 30px;line-height: 30px;margin-right: 15px; color: #000;
+	text-align: center;font-size: 12px;}
+.features-button .checkbox{line-height: 12px;display: inline-block;width: 300px;}
+.features-button .checkbox input[type=checkbox]{margin-right:1px;}
+#add{background: #2196f3;color: #fff;width: 100px;}
+#modify{background: #ff9800;color: #fff;width: 100px;}
+#search{width: 30%;margin-top:-3px;}
+#searchInput{width: 250px;height: 30px;z-index:1;}
+/* input[type=radio]{margin: 0} */
+.operate-company-page{display: none;position: absolute;background: #fff;width: 500px;z-index: 3;padding: 10px;border:1px solid #aaa;border-radius: 2px;top:120px;left: 50%;margin-left: -250px;box-shadow:0px 0px 15px 0px #fff ;}
+.checkbox label{margin: 0;}
+.checkbox input{margin: 0;}
+.add label{font-weight: bold;}
+.add .checkbox{width: 100%; margin: 0 auto;padding:5px;font-size: 12px;}
+.add input{margin: 5px;}
+.add .checkbox label{font-weight: normal;}
+.add .checkbox input{margin-bottom:0px;}
+.btn-set{width: 230px;text-align: center;}
+.btn-set button{width: 100px;margin-right:10px; }
+.right-show{margin-left: 160px;}
+.ulstyle{display: :table;width:1180px;}
+.ulstyle ul{display: table-row;width: 100%;}
+.ulstyle ul li{display: table-cell;text-align: center;border-right: 1px solid #233342;border-bottom: 1px solid #233342;
+	height: 35px;line-height: 35px;cursor :default;font-size: 12px;}
+.info-company{background: #fff;color: #222;}
+.info-company:hover{background: rgba(44,68,90,0.5);color: #fff;}
+.info-company-change{background: rgba(44,68,90,0.5);color: #fff;}
+.bor-left{border-left: 1px solid #233342;}
+.bor-top{border-top: 1px solid #233342;}

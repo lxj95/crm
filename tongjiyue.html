@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/base.css"> 
+	<link rel="stylesheet" href="css/statistical.css"> 
+	 <link rel="stylesheet" href="css/toastr.min.css">
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/toastr.min.js"></script>
+	<script type="text/javascript">
+		 toastr.options = {
+			  "closeButton": false,
+			  "debug": false,
+			  "positionClass": "toast-top-full-width",
+			  "onclick": null,
+			  "showDuration": "3000",
+			  "hideDuration": "1000",
+			  "timeOut": "2500",
+			  "extendedTimeOut": "1000",
+			  "showEasing": "swing",
+			  "hideEasing": "linear",
+			  "showMethod": "fadeIn",
+			  "hideMethod": "fadeOut"
+			};
+	</script>
+</head>
+<script type="text/javascript">
+	$(function(){
+var rightheight=$(window).innerHeight()-50;
+$(".right-show").height(rightheight);
+})
+</script>
+<body>
+	<header>
+	<div class="logo">
+		<img src="" alt="" >
+	</div>
+
+	<div class="current"><span class="glyphicon glyphicon-map-marker" id="currentLocation"></span> 统计分析
+	</div>
+	<div class="user ">
+		<a >XXX，您好</a>
+		<a ><span class="glyphicon glyphicon-user"></span> 账号设置</a>
+		<a href="login.html"><span class="glyphicon glyphicon-log-out"></span> 退出</a>
+	</div>
+	</header>
+
+	<nav>
+		<ul class="nav-list">
+			<li id="manageBlock"><a href="index.html" ><span class="glyphicon glyphicon-th "></span>组织框架</a>
+				<ul  id="manage">
+					<li id="manageC"><a href="index.html">公司管理</a></li>
+					<li id="manageE"><a href="employee.html">员工管理</a></li>
+				</ul>
+			</li>
+			<li><a href="role-management.html"><span class="glyphicon glyphicon-move"></span> 角色管理</a></li>
+			<li><a href="authority.html"><span class="glyphicon glyphicon-eye-open"></span> 权限管理</a></li>
+			<li><a href="product.html"><span class="glyphicon glyphicon-fire"></span> 产品管理</a></li>
+			<li><a href="client.html"><span class="glyphicon glyphicon-link"></span> 客户管理</a></li>
+			<li><a href="#" class="selected"><span class="glyphicon glyphicon-signal spancolor"></span> 统计分析</a></li>
+		</ul>
+	</nav>
+	<div class="container-fluid"style="padding:0">
+	<div class="right-show">
+		<div class="features-button">
+			<ul > 
+				<li >
+				<ul class="report-header">
+					<li class="bor-left"><a href="statistical-analysis.html" >年度报表</a></li>
+					<li><a href="tongjiji.html">季度报表</a></li>
+					<li><a href="#" style="background: #30cc78;">月报表</a></li>
+					<li><a href="tongjizhou.html">周报表</a></li>
+					<li><a href="tongjiri.html">当天业绩</a></li>
+				</ul>
+				</li>
+				<li id="search">
+				<form >
+				 <div class="form-group wid2">
+				    <label for="company" >公司</label>
+				      <select  id="company">
+						  <option>1</option>
+						  <option>2</option>
+						  <option>3</option>
+						  <option>4</option>
+						  <option>5</option>
+				      </select>
+				  </div>
+				   <div class="form-group wid2">
+				    <label for="company" >对接人</label>
+				      <select  id="company">
+						  <option>1</option>
+						  <option>2</option>
+						  <option>3</option>
+						  <option>4</option>
+						  <option>5</option>
+				      </select>
+				  </div>
+				  <div class="form-group wid2">
+				    <label for="company" >年份</label>
+				      <select  id="company">
+						  <option>1</option>
+						  <option>2</option>
+						  <option>3</option>
+						  <option>4</option>
+						  <option>5</option>
+				      </select>
+				  </div>
+				  <div class="form-group wid2">
+				    <label for="company" >月份</label>
+				      <select  id="company">
+						  <option>1</option>
+						  <option>2</option>
+						  <option>3</option>
+						  <option>4</option>
+						  <option>5</option>
+						  <option>6</option>
+						  <option>7</option>
+						  <option>8</option>
+						  <option>9</option>
+						  <option>10</option>
+						  <option>11</option>
+						  <option>12</option>
+				      </select>
+				  </div>
+				</form>
+				</li>
+			</ul>
+		</div>
+		<div id="container" class="clear chart1"></div>
+		<div id="cao"class="clear"><span class="glyphicon glyphicon-chevron-up" id="lalian"></span></div>
+		<div class="clear ulstyle" >
+			<ul style="background: #2c445a;color:#fff" class="bT">
+				<li class=" bor-top bor-left" style="width:300px">序号</li>
+				<li class="bor-top " style="width:800px;">产品名称</li>
+				<li class="bor-top " style="width:400px;">成交数量</li>
+				<li class="bor-top " style="width:400px;">成交单价</li>	
+				<li class="bor-top " style="width:400px;">对接人</li>
+				<li class="bor-top " style="width:400px;">购买者</li>
+				<li class="bor-top " style="width:800px;">所在公司</li>
+				<li class="bor-top " style="width:800px;">成交时间</li>
+			</ul>
+			<ul class="info-company">
+				<li class="bor-left">1</li>
+				<li>三炮</li>
+				<li>男</li>
+				<li>123456789</li>
+				<li>12345</li>
+				<li>1234567</li>
+				<li>酒窝</li>
+				<li>2017-04-07</li>
+			</ul>
+			<ul class="info-company">
+				<li class="bor-left">2</li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>	
+		</div>
+		<div class="pages">
+			<div aria-label="Page navigation">
+				<ul class="pager floatR">
+	   				<li><a href="javascript:lastPage(${currentPage-1})">&lt上一页</a></li>
+	    				<li><a href="javascript:nextPage(${currentPage+1})">下一页&gt</a></li>
+	    				<li>|</li>
+	    				<li>第1页</li>
+	    				<li>|</li>
+	    				<li>共1页</li>
+	    				<li>|</li>
+	    				<li>共1条</li>
+	    				<li>|</li>
+	 			</ul>	 
+ 				 <input type="hidden" id="totalPage" value="${totalPage}" />
+ 				 <input type="hidden" id="currentPage" value="${currentPage}" />
+			</div>
+		</div>
+
+	</div>
+	</div>
+<script type="text/javascript">
+	$(function(){
+		$("#cao").click(function(){
+			if($("#lalian").attr("class")=="glyphicon glyphicon-chevron-up"){
+				 $("#container").css({"z-index":"-1"});
+			 $("#container").animate({
+				      opacity:'0',
+				      height:'0',
+				    });
+			$("#lalian").attr("class","glyphicon glyphicon-chevron-down");
+			}else{
+				$("#lalian").attr("class","glyphicon glyphicon-chevron-up");
+				$("#container").css({"z-index":"0"});
+				 $("#container").animate({
+				      opacity:'1',
+				      height:'500px',
+				    });
+			}
+		});
+	})
+</script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
+<script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('container'));
+        var option = {
+            title: {
+                text: '月报表',
+                subtext: '2017'
+            },
+            tooltip: {},
+            legend: {
+                data:['收入']
+            },
+            xAxis: {
+                data: [1,2,3,4,5,6,7,8,9,10,11,12]
+            },
+            yAxis: {},
+            series: [{
+                name: '收入',
+                type: 'bar',
+                data: [11,22,33,44,55,66,77,88,99,110,121,132]
+            }]
+        };
+        myChart.setOption(option);
+    </script>
+</body>
+</html>

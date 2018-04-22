@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors vfasky (vfasky@gmail.com)
+ * @date    2017-04-07 10:34:16
+ * @version $Id$
+ */
+.right-show{margin-left: 160px;margin-top:100px;}
+.ulstyle{display: :table;width:800px;}
+.ulstyle ul{display: table-row;width: 100%;}
+.ulstyle ul li{display: table-cell;text-align: center;border-right: 1px solid #233342;border-bottom: 1px solid #233342;
+	height: 35px;line-height: 35px;cursor :default;font-size: 12px;}
+.info-company{background: #fff;color: #222;}
+.info-company:hover{background: rgba(44,68,90,0.5);color: #fff;}
+.info-company-change{background: rgba(44,68,90,0.5);color: #fff;}
+
+.bor-left{border-left: 1px solid #233342;}

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors vfasky (vfasky@gmail.com)
+ * @date    2017-04-10 14:02:15
+ * @version $Id$
+ */
+
+.login-module{width: 400px;height: 230px;position: absolute;top:50%;margin-top:-150px;
+	left:0;right: 0;background: #2b2b36;padding-top:40px;border-radius: 5px;text-shadow: 0px 0px 20px #ccc;}
+header{background: #fff;}
+.logo{background: #fff;color: #333;}
+h1{font-size: 30px;text-align: center;margin-top:100px;cursor: default;z-index:10;color:#fff;position: absolute;width:400px;text-shadow: 0px 0px 8px #fff;left:0;right:0;}
+#loginBtn{height: 66px;border-radius: 0;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;font-size: 20px;line-height: 55px;}
+.touxiang{width: 66px;height: 66px;border-radius: 50%;margin-top:-20px;margin-bottom: 20px;box-shadow: 0px 0px 20px #fff;}
+img{width: 100%;height: 100%;border-radius: 50%;}
+.input-group-addon{background: #52555a;color: #2b2b36;border: none;border-radius: 0;}
+input:checked{border: none;}
+#userName,#psw{background: rgba(255,255,255,0.2);color: #fff;border: none;border-radius: 0;padding-left: 0;}
+#userName:focus,#psw:focus{border: none;box-shadow: 0px 0px 0px #fff;}
+.btn-primary{border: none;font-weight: normal;
+	background:#286090;text-shadow: 0px 0px 8px #fff;
+	transition:1s;}
+.btn-primary:hover{background: #337ab7;}
+.biaodan{position: absolute;top:300px;left:0;right:0;z-index:2;}
